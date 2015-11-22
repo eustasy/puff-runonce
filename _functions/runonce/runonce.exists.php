@@ -1,11 +1,18 @@
 <?php
 
 function Puff_Runonce_Exists($Connection, $Runonce, $Active = true) {
+
 	$SQL = 'SELECT * FROM `Runonces` WHERE `Runonce`=\''.$Runonce.'\'';
 	if ( $Active ) {
 		$SQL .= ' AND `Active`=\'1\'';
 	}
-	$SQL .= ';'
+	$SQL .= ';';
+
 	$Result = mysqli_fetch_count($Connection, $SQL);
-	return $Result;
+	if ( $Result ) {
+		return true;
+	}
+
+	return false;
+
 }

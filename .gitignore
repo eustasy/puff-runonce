@@ -3,9 +3,15 @@ google68cf6f5d58f84416.html
 # Standard
 *custom*
 *~
+# puff-members
+test.member*
+_functions/members/*
+_libs/authenticatron.php
+_libs/phpqrcode_2010100721_1.1.4.php
+_puff/settings/members.php
+_sql/Members.sql
 # puff-db
-_functions/db/mysqli_fetch_count.php
-_functions/db/mysqli_fetch_once.php
+_functions/db/*
 _puff/hooks/preload/connect-to-database.php
 _puff/settings/db.php
 # puff-core
