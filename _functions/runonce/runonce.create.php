@@ -20,6 +20,8 @@ function Puff_Runonce_Create($Connection, $Session = false) {
 
 	////	Insert into Database
 	$Result = mysqli_query($Connection, 'INSERT INTO `Runonces` (`Runonce`, `Session`) VALUES (\''.$Runonce.'\', \''.$Session.'\');');
+	$Result['Result'] = $Result;
+	$Result['Runonce'] = $Runonce;
 	return $Result;
 
 }
