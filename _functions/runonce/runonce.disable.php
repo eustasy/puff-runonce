@@ -1,3 +1,5 @@
+<?php
+
 function Puff_Runonce_Disable($Connection, $Runonce) {
 	$Runonce = htmlentities($Runonce, ENT_QUOTES, 'UTF-8');
 	$RunonceExists = Puff_Runonce_Exists($Connection, $Runonce);
