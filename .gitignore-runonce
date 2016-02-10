@@ -1,4 +1,4 @@
 # puff-runonce
-test.runonce.php
 _functions/runonce/*
+_tests/runonce/*
 _sql/Runonces.sql
