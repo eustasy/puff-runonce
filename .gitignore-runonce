@@ -1,4 +1,4 @@
-# puff-runonce
+# [Puff RunOnce](https://github.com/eustasy/puff-runonce)
 _functions/runonce/*
 _tests/runonce/*
 _sql/Runonces.sql
