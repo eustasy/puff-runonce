@@ -20,7 +20,8 @@ script:
   - ./normal-checks/php.sh
   - php normal-checks/json.php
   - php normal-checks/xml.php
-  - php _tests/runonce/test.runonce.php
+# This test can't run unless it runs inside a core install.
+#  - php _tests/runonce/test.runonce.php
 
 notifications:
   email:
