@@ -20,6 +20,7 @@ script:
   - ./normal-checks/php.sh
   - php normal-checks/json.php
   - php normal-checks/xml.php
+  - php _tests/runonce/test.runonce.php
 
 notifications:
   email:
