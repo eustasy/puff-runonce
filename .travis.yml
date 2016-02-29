@@ -13,6 +13,8 @@ matrix:
     - php: 7.0
     - php: hhvm
 
+before_install:
+  - pip install --user codecov
 before_script:
   - git clone https://github.com/eustasy/normal-checks.git
 
@@ -20,8 +22,9 @@ script:
   - ./normal-checks/php.sh
   - php normal-checks/json.php
   - php normal-checks/xml.php
-# This test can't run unless it runs inside a core install.
-#  - php _tests/runonce/test.runonce.php
+
+after_success:
+  - codecov
 
 notifications:
   email:
